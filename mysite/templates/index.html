@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    <title>Django-38陈海升</title>
+<script type="text/javascript">
+    var numresult;
+    var str;
+    function onclicknum(nums) {
+        str = document.getElementById("nummessege");
+        str.value = str.value + nums;
+    }
+    function onclickclear() {
+        str = document.getElementById("nummessege");
+        str.value = "";
+    }
+    function onclickresult() {
+        str = document.getElementById("nummessege");
+        numresult = eval(str.value);
+        str.value = numresult;
+    }
+</script>
+</head>
+<body bgcolor="affff" >
+    <h1>HelloWorld</h1>
+    <hr/>
+<table border="1" align="center" bgColor="#bbff77"
+            style="height: 350px; width: 270px">
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="nummessege"
+                        style="height: 90px; width: 350px; font-size: 50px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" id="1" onclick="onclicknum(1)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+                <td>
+                    <input type="button" value="2" id="2" onclick="onclicknum(2)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+                <td>
+                    <input type="button" value="3" id="3" onclick="onclicknum(3)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+                <td>
+                    <input type="button" value="+" id="add" onclick="onclicknum('+')"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" id="4" onclick="onclicknum(4)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+                <td>
+                    <input type="button" value="5" id="5" onclick="onclicknum(5)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+                <td>
+                    <input type="button" value="6" id="6" onclick="onclicknum(6)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+
+                <td>
+                    <input type="button" value="-" id="sub" onclick="onclicknum('-')"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" id="7" onclick="onclicknum(7)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+                <td>
+                    <input type="button" value="8" id="8" onclick="onclicknum(8)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+                <td>
+                    <input type="button" value="9" id="9" onclick="onclicknum(9)"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+                <td>
+                    <input type="button" value="*" id="mul" onclick="onclicknum('*')"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="0" id="0" onclick="onclicknum(0)"
+                        style="height: 70px; width: 190px; font-size: 35px">
+                </td>
+                <td>
+                    <input type="button" value="." id="point" onclick="onclicknum('.')"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+                <td>
+                    <input type="button" value="/" id="division"
+                        onclick="onclicknum('/')"
+                        style="height: 70px; width: 90px; font-size: 35px">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Del" id="clear"
+                        onclick="onclickclear()"
+                        style="height: 70px; width: 190px; font-size: 35px" />
+                </td>
+                <td colspan="2">
+                    <input type="button" value="=" id="result"
+                        onclick="onclickresult()"
+                        style="height: 70px; width: 190px; font-size: 35px" />
+                </td>
+            </tr>
+        </table>
+<hr/>
+    <h1>团队简介</h1>
+    <hr/>
+    <h3>团队项目：</h3>
+	<p>	&nbsp;&nbsp;制作一个贴近生活、风格简洁、功能稀少的类备忘录类闹钟的APP。考虑到良好的自制力和时间观念是每个大学生应该具备的，
+		而我们却总是忘记自己要做什么事和被身边其他事所干扰，做这样一个可以帮助我们尽量地执行完每天为自己所订计划的APP的
+		想法就此萌生了。另一方面，市场上应该不乏这类似的APP，但是并不主流，我们也懒得去找，所以团队项目这样确定了。
+	</p>
+	<h3>队员风采：</h3>
+	<p>	&nbsp;&nbsp;陈海升（队长）(2015034643038)：代码测试员。风格多变，擅长多种语言的”helloworld“编程，兴趣是下一门语言
+		的“helloworld”。宣言是：学习没有期限，如果有，那就把它删掉。<br>
+		&nbsp;&nbsp;艾晓晗(2015034643010)：项目经理。风格俏皮可爱，擅长统筹规划，兴趣广泛。宣言是：好好学习。<br>
+		&nbsp;&nbsp;詹振根(2015034643021)：代码编写员。风格哲学，擅长在团队项目中carry，当大哥。对哲学
+		和python很有兴趣。 宣言是：python python Michael Jackson。<br>
+		&nbsp;&nbsp;黄志明(2015034643001)：ui设计。风格随性自然，擅长matlab；对数据挖掘、matlab很有兴趣。
+	</p>
+	<h3>带上合照：<br></h3>
+    <img src="/static/imgs/IMG_20180322_085847.jpg" alt="图像被吞" width="1000" height="618">
+	<h3>团队特色：</h3>
+	<p>	&nbsp;&nbsp;文明和谐，爱国敬业。</p>
+</body>
+</html>
